@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <!--Linking to External CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player-container">
+        <!-- Song -->
+        <div class="image-container">
+            <img src="images/img1.jpg" alt="Album Art">
+        </div>
+        <h2 id="title">Aruaruan Dance</h2>
+        <h3 id="artist">Dj Abreu</h3>
+        <audio src="music/aruarian-dance.mp3"></audio>
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div class="progress" id="progress"></div>
+            <div class="duration-wrapper">
+                <span id="current-time">0:00</span>
+                <span id="duration">4:08</span>
+            </div>
+        </div>
+        <!-- Controls -->
+        <div class="player-controls">
+                <i class="fas fa-solid fa-backward-step"></i>
+                <i class="fas fa-solid fa-play main-button"></i>
+                <i class="fas fa-solid fa-forward-step"></i>
+        </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
