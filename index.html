@@ -16,14 +16,14 @@
 <body>
     <div class="player-container">
         <!-- Song -->
-        <div class="image-container">
-            <img src="images/img1.jpg" alt="Album Art">
+        <div class="img-container">
+            <img src="img/aruarian-dance.jpg" alt="Album Art">
         </div>
         <h2 id="title">Aruaruan Dance</h2>
         <h3 id="artist">Dj Abreu</h3>
         <audio src="music/aruarian-dance.mp3"></audio>
         <!-- Progress Bar -->
-        <div class="progress-container">
+        <div class="progress-container" id="progress-container">
             <div class="progress" id="progress"></div>
             <div class="duration-wrapper">
                 <span id="current-time">0:00</span>
@@ -32,9 +32,9 @@
         </div>
         <!-- Controls -->
         <div class="player-controls">
-                <i class="fas fa-solid fa-backward-step"></i>
-                <i class="fas fa-solid fa-play main-button"></i>
-                <i class="fas fa-solid fa-forward-step"></i>
+                <i class="fas fa-solid fa-backward-step" id="prev" title="Previous"></i>
+                <i class="fas fa-solid fa-play main-button" id="play" title="Play"></i>
+                <i class="fas fa-solid fa-forward-step" id="next" title="Next"></i>
         </div>
     </div>
     <!-- Script -->

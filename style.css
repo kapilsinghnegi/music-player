@@ -23,7 +23,7 @@ body {
   box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3);
 }
 
-.image-container {
+.img-container {
   height: 300px;
   width: 300px;
   position: relative;
@@ -31,7 +31,7 @@ body {
   left: 50px;
 }
 
-.image-container img{
+.img-container img{
   height: 100%;
   width: 100%;
   object-fit: cover;
