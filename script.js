@@ -53,12 +53,6 @@ function pauseSong() {
     music.pause();
 }
 
-// Current Song
-let songIndex = 0;
-
-// On Load - Select First Song
-loadSong(songs[songIndex]);
-
 // Play or Pause Event Listener
 playBtn.addEventListener('click', () => (isPlaying ? pauseSong() : playSong()));
 
@@ -69,6 +63,9 @@ function loadSong(song) {
   music.src = `music/${song.name}.mp3`;
   image.src = `img/${song.name}.jpg`;
 }
+
+// Current Song
+let songIndex = 0;
 
 // Previous Song
 function prevSong() {
